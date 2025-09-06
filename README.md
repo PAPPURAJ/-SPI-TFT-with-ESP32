@@ -8,7 +8,7 @@
 
 **A beginner-friendly ESP32 project to display images on TFT LCD displays using SPI communication**
 
-[![Output Preview](Output_Picture.jpg)](Output_Picture.jpg)
+[![Output Preview](Output_Picture.webp)](Output_Picture.webp)
 
 *Click image to view full size - Actual ESP32 TFT display output*
 
@@ -169,7 +169,7 @@ SPI-TFT-with-ESP32/
 ├── 📄 sketch_sep06c.ino              # Main Arduino code
 ├── 🖼️ MyPicture_bitmap.h             # Image data (1.26MB)
 ├── 📸 MyPicture.png                  # Source image
-├── 📷 Output_Picture.jpg             # Actual display output
+├── 📷 Output_Picture.webp            # Actual display output
 ├── 🐍 image_to_bitmap_converter.py   # Image converter script
 ├── 📖 README.md                      # This documentation
 └── 📄 LICENSE                        # MIT License
