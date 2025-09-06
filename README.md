@@ -319,6 +319,7 @@ For beginners who need help:
 
 **Contact the Author:**
 - 📧 **Email**: [me@pappuraj.com](mailto:me@pappuraj.com)
-- 🐙 **GitHub**: [@PAPPURAJ](https://github.com/PAPPURAJ)
+- 🌐 **Website**: [pappuraj.com](https://pappuraj.com)
+- 💼 **LinkedIn**: [linkedin.com/in/pappuraj](https://linkedin.com/in/pappuraj)
 
 **Remember**: Always double-check your wiring before powering on! 🔌
