@@ -1,7 +1,7 @@
 #include <SPI.h>
 #include <TFT_eSPI.h>
 #include <TJpg_Decoder.h>
-#include "picture_bitmap.h"   // picture_bitmap[], picture_bitmap_width, picture_bitmap_height
+#include "passport_bitmap.h"   // passport_bitmap[], passport_bitmap_width, passport_bitmap_height
 
 TFT_eSPI tft;
 
@@ -43,22 +43,22 @@ void setup() {
   tft.fillScreen(TFT_BLACK);
   Serial.println("TFT test completed");
 
-  // Test with your actual picture as bitmap (no JPEG decoder)
-  Serial.println("Testing your picture as bitmap...");
-  Serial.printf("Image size: %dx%d pixels\n", picture_bitmap_width, picture_bitmap_height);
+  // Test with your passport picture as bitmap (no JPEG decoder)
+  Serial.println("Testing your passport picture as bitmap...");
+  Serial.printf("Image size: %dx%d pixels\n", passport_bitmap_width, passport_bitmap_height);
   
   // Display portrait full screen (320x480 on portrait display)
-  Serial.printf("Portrait full screen image: %dx%d pixels\n", picture_bitmap_width, picture_bitmap_height);
+  Serial.printf("Portrait full screen image: %dx%d pixels\n", passport_bitmap_width, passport_bitmap_height);
   Serial.printf("Display size in portrait mode: %dx%d pixels\n", tft.width(), tft.height());
   
-  // Draw your actual picture at (0,0) for perfect full screen fit
-  tft.pushImage(0, 0, picture_bitmap_width, picture_bitmap_height, picture_bitmap);
+  // Draw your passport picture at (0,0) for perfect full screen fit
+  tft.pushImage(0, 0, passport_bitmap_width, passport_bitmap_height, passport_bitmap);
   
   Serial.println("Your picture drawing completed!");
   
   // Add some text
   tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.drawString("PERFECT FIT!", 10, 10);
+  tft.drawString("PASSPORT PHOTO!", 10, 10);
   tft.drawString("320x480 image", 10, 30);
   tft.drawString("Portrait Display", 10, 50);
 }
