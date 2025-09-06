@@ -71,11 +71,28 @@
 ## 🚀 Quick Start
 
 ### 1️⃣ Install Software
-```bash
-# Install Arduino IDE from arduino.cc
-# Install ESP32 board package in Arduino IDE
-# Install TFT_eSPI library
-```
+
+**Step 1: Download Arduino IDE**
+- Go to [arduino.cc](https://www.arduino.cc/en/software)
+- Download and install Arduino IDE
+
+**Step 2: Add ESP32 Support**
+- Open Arduino IDE
+- Go to **File → Preferences**
+- Add this URL: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
+- Go to **Tools → Board → Boards Manager**
+- Search "ESP32" and install **ESP32 by Espressif Systems**
+
+**Step 3: Install Libraries**
+- Go to **Tools → Manage Libraries**
+- Search and install **TFT_eSPI** by Bodmer
+- Search and install **TJpg_Decoder** by Bodmer (optional)
+
+**Step 4: Configure TFT_eSPI Library**
+- Navigate to your Arduino libraries folder
+- Open `TFT_eSPI/User_Setup.h`
+- Uncomment the line: `#define ILI9341_DRIVER`
+- Save the file
 
 ### 2️⃣ Connect Hardware
 - Connect **essential pins** (SPI, power, D/C, CS, RESET)
@@ -83,17 +100,34 @@
 - Double-check all connections
 
 ### 3️⃣ Upload Code
-```bash
-# Open sketch_sep06c.ino in Arduino IDE
-# Select ESP32 Dev Module board
-# Click Upload
-```
+
+**Step 1: Open the Project**
+- Open `sketch_sep06c.ino` in Arduino IDE
+
+**Step 2: Select Board and Port**
+- Go to **Tools → Board → ESP32 Arduino → ESP32 Dev Module**
+- Go to **Tools → Port** and select your ESP32's COM port
+- If you don't see a port, check your USB cable
+
+**Step 3: Upload**
+- Click the **Upload** button (arrow icon)
+- If upload fails, press and hold the **BOOT** button on ESP32 while uploading
 
 ### 4️⃣ Enjoy! 🎉
 Your display will show:
 1. **Colored test rectangles** (2 seconds)
 2. **Your image** in full-screen portrait mode
 3. **"MY PICTURE!"** text overlay
+
+**💡 Pro Tip:** Open **Tools → Serial Monitor** to see debug messages:
+```
+Starting SPI TFT with ESP32 Test...
+TFT initialized in portrait mode: 320x480 pixels
+TFT test completed
+Testing your picture as bitmap...
+Image size: 320x480 pixels
+Your picture drawing completed!
+```
 
 ---
 
