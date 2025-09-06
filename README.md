@@ -90,6 +90,7 @@ A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen dis
 - **`sketch_sep06c.ino`** - Main Arduino code
 - **`MyPicture_bitmap.h`** - Image data in bitmap format (1.23MB)
 - **`MyPicture.png`** - Original source image
+- **`Output_Picture.jpg`** - Actual output from ESP32 TFT display
 - **`image_to_bitmap_converter.py`** - Ready-to-use image converter script ⭐
 - **`README.md`** - This documentation
 - **`PIN_DIAGRAM.md`** - Visual connection guide
@@ -114,6 +115,14 @@ The display will show:
 1. **Colored test rectangles** (Red, Green, Blue) for 2 seconds
 2. **Your picture** in full-screen portrait mode
 3. **Status text overlay** showing "MY PICTURE!"
+
+## 📸 Project Output
+
+Here's what your ESP32 TFT display will show when running this project:
+
+![ESP32 TFT Display Output](Output_Picture.jpg)
+
+*Actual output from the ESP32 TFT display showing the image in full-screen portrait mode*
 
 ## 🖼️ Displaying Your Own Images
 
@@ -300,12 +309,16 @@ MIT License - see LICENSE file for details
 
 **Happy coding! 🚀** If you have any questions, please open an issue on GitHub.
 
-## 📞 Support
+## 📞 Support & Contact
 
 For beginners who need help:
 1. Check the troubleshooting section above
 2. Verify all connections match the pin diagram
 3. Ensure you have the correct libraries installed
 4. Open an issue on GitHub with your specific problem
+
+**Contact the Author:**
+- 📧 **Email**: [me@pappuraj.com](mailto:me@pappuraj.com)
+- 🐙 **GitHub**: [@PAPPURAJ](https://github.com/PAPPURAJ)
 
 **Remember**: Always double-check your wiring before powering on! 🔌
