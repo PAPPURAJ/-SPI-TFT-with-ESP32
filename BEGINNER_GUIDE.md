@@ -176,11 +176,21 @@ Your picture drawing completed!
 ## 🚀 Next Steps
 
 ### Try These Projects:
-1. **Display different images**
+1. **Display different images** (use the included converter!)
 2. **Add touch functionality**
 3. **Create a photo slideshow**
 4. **Add buttons for navigation**
 5. **Display sensor data**
+
+### Quick Image Conversion:
+```bash
+# Convert any image to display format
+python3 image_to_bitmap_converter.py your_photo.jpg my_photo
+
+# Then update Arduino code:
+#include "my_photo_bitmap.h"
+tft.pushImage(0, 0, my_photo_bitmap_width, my_photo_bitmap_height, my_photo_bitmap);
+```
 
 ### Learn More:
 1. **Arduino programming basics**

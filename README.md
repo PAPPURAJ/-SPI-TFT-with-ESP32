@@ -90,7 +90,10 @@ A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen dis
 - **`sketch_sep06c.ino`** - Main Arduino code
 - **`passport_bitmap.h`** - Image data in bitmap format (1.23MB)
 - **`passport.png`** - Original source image
+- **`image_to_bitmap_converter.py`** - Ready-to-use image converter script ⭐
 - **`README.md`** - This documentation
+- **`PIN_DIAGRAM.md`** - Visual connection guide
+- **`BEGINNER_GUIDE.md`** - Step-by-step tutorial
 - **`LICENSE`** - MIT License
 
 ## 🎯 Usage Instructions
@@ -114,7 +117,35 @@ The display will show:
 
 ## 🖼️ Displaying Your Own Images
 
-### Method 1: Using Python Script (Recommended)
+### Method 1: Ready-to-Use Converter (Recommended) ⭐
+**Use the included Python converter script:**
+
+1. **Install Python PIL library**:
+   ```bash
+   pip install Pillow
+   ```
+
+2. **Run the converter**:
+   ```bash
+   python3 image_to_bitmap_converter.py your_image.jpg my_image
+   ```
+
+3. **Examples**:
+   ```bash
+   # Convert with default 320x480 size
+   python3 image_to_bitmap_converter.py photo.jpg my_photo
+   
+   # Convert with custom size
+   python3 image_to_bitmap_converter.py image.png my_image 240 320
+   ```
+
+4. **Update Arduino code**:
+   ```cpp
+   #include "my_image_bitmap.h"
+   tft.pushImage(0, 0, my_image_bitmap_width, my_image_bitmap_height, my_image_bitmap);
+   ```
+
+### Method 2: Manual Python Script
 1. **Prepare your image**: Resize to 320x480 pixels
 2. **Create conversion script**:
    ```python
@@ -148,7 +179,7 @@ The display will show:
    // Change passport_bitmap to your_image_bitmap in the code
    ```
 
-### Method 2: Online Converter
+### Method 3: Online Converter
 1. Use online image to C array converters
 2. Set output format to RGB565
 3. Set dimensions to 320x480
