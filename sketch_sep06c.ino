@@ -25,7 +25,7 @@ bool tft_output(int16_t x,int16_t y,uint16_t w,uint16_t h,uint16_t* bmp){
 void setup() {
   Serial.begin(115200);
   delay(1000);  // Give time for serial to initialize
-  Serial.println("Starting ESP32 TFT Display Test...");
+  Serial.println("Starting SPI TFT with ESP32 Test...");
   
   tft.init();
   tft.setRotation(0);  // Portrait mode for best fit with 320x480 image

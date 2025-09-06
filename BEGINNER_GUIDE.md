@@ -1,4 +1,4 @@
-# 🚀 ESP32 TFT Display - Complete Beginner's Guide
+# 🚀 SPI TFT with ESP32 - Complete Beginner's Guide
 
 ## 📖 What You'll Learn
 
@@ -117,7 +117,7 @@ By the end of this guide, you'll have:
 
 ### Serial Monitor Output:
 ```
-Starting ESP32 TFT Display Test...
+Starting SPI TFT with ESP32 Test...
 TFT initialized in portrait mode: 320x480 pixels
 TFT test completed
 Testing your picture as bitmap...

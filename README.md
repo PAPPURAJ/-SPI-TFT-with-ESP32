@@ -1,6 +1,6 @@
-# ESP32 TFT Display Image Viewer
+# SPI TFT with ESP32
 
-A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen display. This project shows how to display your pictures or any image in full-screen portrait mode.
+A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen display using SPI communication. This project shows how to display your pictures or any image in full-screen portrait mode.
 
 ## 🖼️ Features
 

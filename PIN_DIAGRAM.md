@@ -1,4 +1,4 @@
-# ESP32 TFT Display Pin Connection Diagram
+# SPI TFT with ESP32 Pin Connection Diagram
 
 ## 🔌 Visual Pin Layout
 
