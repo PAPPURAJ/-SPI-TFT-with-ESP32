@@ -4,7 +4,7 @@
 
 By the end of this guide, you'll have:
 - ✅ Connected an ESP32 to a TFT display
-- ✅ Displayed a passport photo in full-screen
+- ✅ Displayed your picture in full-screen
 - ✅ Understood basic electronics connections
 - ✅ Learned Arduino programming basics
 
@@ -104,15 +104,15 @@ By the end of this guide, you'll have:
 2. **Power on** your setup
 3. **Watch the display**:
    - First: Colored rectangles (Red, Green, Blue)
-   - Then: Your passport photo in full-screen
-   - Text overlay: "PASSPORT PHOTO!"
+   - Then: Your picture in full-screen
+   - Text overlay: "MY PICTURE!"
 
 ## 🎉 Success! What You Should See
 
 ### Expected Display Sequence:
 1. **Black screen** (2 seconds)
 2. **Colored test bars** (2 seconds)
-3. **Your passport photo** (full-screen)
+3. **Your picture** (full-screen)
 4. **Text overlay** at the top
 
 ### Serial Monitor Output:
@@ -120,7 +120,7 @@ By the end of this guide, you'll have:
 Starting ESP32 TFT Display Test...
 TFT initialized in portrait mode: 320x480 pixels
 TFT test completed
-Testing your passport picture as bitmap...
+Testing your picture as bitmap...
 Image size: 320x480 pixels
 Your picture drawing completed!
 ```

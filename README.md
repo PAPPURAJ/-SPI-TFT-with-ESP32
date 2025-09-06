@@ -1,6 +1,6 @@
 # ESP32 TFT Display Image Viewer
 
-A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen display. This project shows how to display passport photos or any image in full-screen portrait mode.
+A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen display. This project shows how to display your pictures or any image in full-screen portrait mode.
 
 ## 🖼️ Features
 
@@ -88,8 +88,8 @@ A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen dis
 ## 📁 Project Files
 
 - **`sketch_sep06c.ino`** - Main Arduino code
-- **`passport_bitmap.h`** - Image data in bitmap format (1.23MB)
-- **`passport.png`** - Original source image
+- **`MyPicture_bitmap.h`** - Image data in bitmap format (1.23MB)
+- **`MyPicture.png`** - Original source image
 - **`image_to_bitmap_converter.py`** - Ready-to-use image converter script ⭐
 - **`README.md`** - This documentation
 - **`PIN_DIAGRAM.md`** - Visual connection guide
@@ -112,8 +112,8 @@ A beginner-friendly ESP32 project to display images on a TFT LCD touchscreen dis
 ### Step 3: View Results
 The display will show:
 1. **Colored test rectangles** (Red, Green, Blue) for 2 seconds
-2. **Your passport photo** in full-screen portrait mode
-3. **Status text overlay** showing "PASSPORT PHOTO!"
+2. **Your picture** in full-screen portrait mode
+3. **Status text overlay** showing "MY PICTURE!"
 
 ## 🖼️ Displaying Your Own Images
 
@@ -176,7 +176,7 @@ The display will show:
 3. **Update Arduino code**:
    ```cpp
    #include "your_image_bitmap.h"
-   // Change passport_bitmap to your_image_bitmap in the code
+   // Change MyPicture_bitmap to your_image_bitmap in the code
    ```
 
 ### Method 3: Online Converter
@@ -215,7 +215,7 @@ TFT initialized in portrait mode: 320x480 pixels
 TFT initialized and screen cleared
 Testing TFT display...
 TFT test completed
-Testing your passport picture as bitmap...
+Testing your picture as bitmap...
 Image size: 320x480 pixels
 Portrait full screen image: 320x480 pixels
 Display size in portrait mode: 320x480 pixels
